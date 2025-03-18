@@ -34,6 +34,7 @@ let notes = [
   
   app.use(express.json())
   app.use(requestLogger)
+  app.use(express.static('dist'))
 
   //CORS Middleware (before paths)
 
